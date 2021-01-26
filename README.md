@@ -1,5 +1,5 @@
 # NEXT-Test
-8-queens puzzle.
+//8-queens puzzle.
 
 public class EightQueens
     {
