@@ -1,6 +1,6 @@
 # NEXT-Test
 //8-queens puzzle.
-
+// c#
 public class EightQueens
     {
         //定義一個max表示共有多少個皇后
@@ -8,11 +8,8 @@ public class EightQueens
 
         //定義陣列arr,儲存皇后放置位置的結果，比如 arr={0,4,7,5,2,6,1,3}
         static int[] _arr = new int[_max];
-
-        //初始化解法次數
         static int _count = 0;
 
-        //初始化衝突次數
         static int _judgeCount = 0;
         public static void Test()
         {
@@ -25,7 +22,7 @@ public class EightQueens
 
         private static void Check(int n)
         {
-            if (n == _max) //當n=8,說明8個皇后已經方法，因為初始值從0開始
+            if (n == _max) 
             {
                 Print();
 
@@ -35,10 +32,8 @@ public class EightQueens
             
             for (int i = 0; i < _max; i++)
             {
-               
                 _arr[n] = i;
 
-               
                 if (Judge(n))
                 {
                  
@@ -74,3 +69,5 @@ public class EightQueens
             System.Console.WriteLine();
         }
     }
+
+
