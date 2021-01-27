@@ -1,6 +1,8 @@
 # NEXT-Test
 //8-queens puzzle.
 // c#
+
+
 public class EightQueens
     {
         //定義一個max表示共有多少個皇后
