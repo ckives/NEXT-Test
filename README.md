@@ -5,8 +5,6 @@ public class EightQueens
     {
         //定義一個max表示共有多少個皇后
         static int _max = 8;
-
-        //定義陣列arr,儲存皇后放置位置的結果，比如 arr={0,4,7,5,2,6,1,3}
         static int[] _arr = new int[_max];
         static int _count = 0;
 
@@ -17,7 +15,7 @@ public class EightQueens
 
             Console.WriteLine($"一共有{_count}種解法");
 
-            Console.WriteLine($"一共判斷衝突的次數{_judgeCount}次");
+            Console.WriteLine($"衝突的次數{_judgeCount}次");
         }
 
         private static void Check(int n)
